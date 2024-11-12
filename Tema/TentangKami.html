@@ -7,22 +7,57 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            background-color: #266145;
+            overflow-y: hidden;
         }
-        header, footer {
-            background-color: #004d26;
-            color: white;
-            text-align: center;
-            padding: 20px;
+
+        header{
+          background-color: #ffffff;
+          position: fixed;
+          width: 100%;
+          color: rgb(29, 29, 29);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+          height: 7%;
+          overflow-y: hidden;
+          z-index: 9999;
         }
+
+        nav{
+          margin-left: 70%;
+          margin-right: 10px;
+          transform: translateY(-40px);
+        }
+
+        ul{
+          overflow: hidden;
+          list-style: none;
+          padding: 0%;
+          margin: 0%;
+          text-align: end;
+          color: #266145;
+          font-size: larger ;
+        }
+
+        a{
+          color: #266145;
+          text-decoration: none;
+          font-weight: 600;
+          margin-right: 5px;
+          margin-left: 5px;
+          font-weight: 700;
+        }
+
         main {
-            padding: 20px;
-            background-color: #ffffff;
-            margin: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          transform: translateY(100px);
+          padding: 20px;
+          background-color: #ffffff;
+          margin: 20px;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
         }
         h2 {
             color: #004d26;
@@ -39,13 +74,33 @@
             padding: 10px;
             text-align: left;
         }
+
+        footer{
+          height: 40px;
+          position: relative;
+          transform: translateY(430px);
+          text-align: center;
+          background-color: #1f1f1f;
+          padding-bottom: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
+          color: #ffffff;
+        }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Perhutani</h1>
+  <header>
+    <a href=""><img src="./IMG/logo.png" alt="logo"></a>
+    <nav>
+        <ul>
+            <a href="">Home</a> |
+            <a href="">Laporan</a> |
+            <a href="">Tentang Kami</a> |
+            <a href="">Kontak</a>
+        </ul>
+    </nav>
 </header>
+
 <main>
     <section id="tentang-kami">
         <h2>Tentang Kami</h2>
@@ -65,7 +120,7 @@
 </main>
 
 <footer>
-    <p>© 2024 Perhutani. Semua Hak Dilindungi.</p>
+    <p>2024. Semua Hak Dilindungi.</p>
 </footer>
 
 <script>

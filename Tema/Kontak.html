@@ -5,11 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontak Kami</title>
     <style>
+        * {
+          margin: 0;
+          padding: 0;
+          overflow-x: hidden;
+          overflow-y: hidden;
+
+        }
+
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            height: 100%;
         }
         
         header{
@@ -66,6 +75,7 @@
             margin: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transform: translateY(100px);
         }
         h2 {
             color: #004d26;
@@ -94,14 +104,14 @@
         }
     </style>
 </head>
-<body>
 
+<body>
   <header>
     <a href=""><img src="./IMG/logo.png" alt="logo"></a>
     <nav>
         <ul>
             <a href="">Home</a> |
-            <a href="">Laporan</a> |
+            <a href="">Content</a> |
             <a href="">Tentang Kami</a> |
             <a href="">Kontak</a>
         </ul>
@@ -127,13 +137,13 @@
 </main>
 
 <footer>
-    <p>© 2024 Perhutani. Semua Hak Dilindungi.</p>
+    <p>2024. Semua Hak Dilindungi.</p>
 </footer>
 
 <script>
     document.getElementById('formKontak').addEventListener('submit', function(event) {
         event.preventDefault();
-        alert('Pertanyaan anda telah terkirim');
+        alert('Pertanyaan anda telah terkirim'+'\n'+'Cek email anda untuk balasan dari kami');
         this.reset();
     });
 </script>
