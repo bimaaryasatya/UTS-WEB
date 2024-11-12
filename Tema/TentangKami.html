@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #004d26;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        main {
+            padding: 20px;
+            background-color: #ffffff;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #004d26;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #004d26;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Perhutani</h1>
+</header>
+<main>
+    <section id="tentang-kami">
+        <h2>Tentang Kami</h2>
+        <p>Perhutani adalah perusahaan yang berdedikasi untuk mengelola sumber daya hutan secara lestari di Pulau Jawa dan Madura, menjaga prinsip kelestarian dan tata kelola perusahaan yang baik.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Unit Bisnis</th>
+                    <th>Deskripsi</th>
+                </tr>
+            </thead>
+            <tbody id="unit-bisnis-list">
+                <!-- Daftar unit bisnis akan dimuat dengan JavaScript -->
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<footer>
+    <p>© 2024 Perhutani. Semua Hak Dilindungi.</p>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const unitBisnis = [
+            { nama: 'Pengelolaan Hutan', deskripsi: 'Mengelola hutan dengan prinsip kelestarian.' },
+            { nama: 'Produksi Kayu', deskripsi: 'Memproduksi kayu secara berkelanjutan.' },
+            { nama: 'Pengelolaan SDA', deskripsi: 'Pengelolaan sumber daya alam yang terbarukan.' },
+            { nama: 'Energi Terbarukan', deskripsi: 'Pengembangan energi yang ramah lingkungan.' },
+            { nama: 'Pariwisata Hutan', deskripsi: 'Mendorong wisata berkelanjutan di area hutan.' },
+            { nama: 'Industri Kehutanan', deskripsi: 'Industri berbasis hasil hutan.' },
+            { nama: 'Pengelolaan Lingkungan', deskripsi: 'Program untuk konservasi dan lingkungan.' }
+        ];
+
+        const tableBody = document.getElementById('unit-bisnis-list');
+        unitBisnis.forEach(unit => {
+            const row = document.createElement('tr');
+            row.innerHTML = `<td>${unit.nama}</td><td>${unit.deskripsi}</td>`;
+            tableBody.appendChild(row);
+        });
+    });
+</script>
+
+</body>
+</html>
