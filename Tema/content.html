@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kehutanan Berkelanjutan</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link ke stylesheet jika ada -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <style>
+        *{
+          margin: 0;
+          padding: 0;
+        }
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Poppins", sans-serif;
             margin: 0;
+            margin-left: 0;
+            margin-right: 0;
             padding: 0;
             background-color: #f9f9f9;
         }
@@ -18,15 +27,17 @@
           width: 100%;
           color: rgb(29, 29, 29);
           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-          height: 7%;
-          overflow-y: hidden;
           z-index: 9999;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 20px;
         }
 
         nav{
-          margin-left: 70%;
-          margin-right: 10px;
-          transform: translateY(-40px);
+          margin-left: auto;
+          margin-right: 0px;
+          transform: none;
         }
 
         ul{
@@ -43,15 +54,14 @@
           color: #266145;
           text-decoration: none;
           font-weight: 600;
-          margin-right: 5px;
+          margin-right: 30px;
           margin-left: 5px;
           font-weight: 700;
         }
 
         header img{
           margin-left: 15px;
-          margin-top: 10px;
-          width: 10%;
+          width: 80%;
         }
         main {
             padding: 1rem;
@@ -78,10 +88,20 @@
             border-radius: 8px;
             overflow: hidden;
             text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .grid-item:hover{
+          transform: scale(1.05);
+          box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
         .grid-item img {
             max-width: 100%;
             height: auto;
+            
         }
         .grid-item p {
             padding: 0.5rem;
@@ -90,8 +110,17 @@
         footer {
             text-align: center;
             padding: 1rem;
-            background-color: #4CAF50;
+            background-color: #266145;
             color: white;
+        }
+
+        .main_content{
+          display: flex;
+          align-items: center;
+          
+        }
+        .grid-container{
+          justify-content: center;
         }
     </style>
 </head>
@@ -101,9 +130,9 @@
     <a href=""><img src="./IMG/logo.png" alt="logo"></a>
     <nav>
         <ul>
-            <a href="">Home</a> |
-            <a href="">Content</a> |
-            <a href="">Tentang Kami</a> |
+            <a href="">Home</a>
+            <a href="">Content</a>
+            <a href="">Tentang Kami</a>
             <a href="">Kontak</a>
         </ul>
     </nav>
@@ -111,28 +140,28 @@
 
 <main>
     <section class="hero">
-        <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400" alt="Kehutanan Berkelanjutan">
+        <img src=".\IMG\wallpaperflare-cropped.jpg" alt="Kehutanan Berkelanjutan" style="margin-left: 0%;">
         <h2>Inovasi dalam Pengelolaan Hutan</h2>
         <p>Menggunakan teknik ramah lingkungan untuk menjaga kelestarian hutan dan keanekaragaman hayati.</p>
     </section>
 
-    <section>
-        <h2>Gambar Teknik Kehutanan Modern</h2>
-        <div class="grid-container">
+    <h2 style="text-align: center;">Teknik Kehutanan Modern</h2><br>
+    <section class="main_content" style="justify-content: center;">
+        <div class="grid-container" style="justify-content: center; margin-left: 300px;">
             <div class="grid-item">
-                <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Pengelolaan Hutan">
+                <img src=".\IMG\wallpaperflare-cropped (1).jpg" alt="Pengelolaan Hutan">
                 <p>Pengelolaan hutan yang berkelanjutan untuk keseimbangan ekosistem.</p>
             </div>
             <div class="grid-item">
-                <img src="https://images.unsplash.com/photo-1560807707-8cc77767d783" alt="Hutan Lestari">
+                <img src=".\IMG\photo-1451303688941-9e06d4b1277a.jpeg" alt="Hutan Lestari">
                 <p>Hutan lestari yang mendukung kehidupan flora dan fauna.</p>
             </div>
             <div class="grid-item">
-                <img src="https://images.unsplash.com/photo-1541692029330-8d7d2d3c2b7b" alt="Reboisasi">
+                <img src=".\IMG\077483100_1647977918-Hutan_3.jpg" alt="Reboisasi">
                 <p>Program reboisasi untuk memulihkan kawasan hutan yang gundul.</p>
             </div>
             <div class="grid-item">
-                <img src="https://images.unsplash.com/photo-1541700104-3a1e3a0c3b2e" alt="Teknologi Kehutanan">
+                <img src=".\IMG\5-Shocking-Stats-800x800.jpg" alt="Teknologi Kehutanan">
                 <p>Penggunaan teknologi dalam pemantauan dan pengelolaan hutan.</p>
             </div>
         </div>
