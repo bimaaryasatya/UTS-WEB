@@ -12,11 +12,46 @@
             padding: 0;
             background-color: #f9f9f9;
         }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1rem;
-            text-align: center;
+        header{
+          background-color: #ffffff;
+          position: fixed;
+          width: 100%;
+          color: rgb(29, 29, 29);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+          height: 7%;
+          overflow-y: hidden;
+          z-index: 9999;
+        }
+
+        nav{
+          margin-left: 70%;
+          margin-right: 10px;
+          transform: translateY(-40px);
+        }
+
+        ul{
+          overflow: hidden;
+          list-style: none;
+          padding: 0%;
+          margin: 0%;
+          text-align: end;
+          color: #266145;
+          font-size: larger ;
+        }
+
+        a{
+          color: #266145;
+          text-decoration: none;
+          font-weight: 600;
+          margin-right: 5px;
+          margin-left: 5px;
+          font-weight: 700;
+        }
+
+        header img{
+          margin-left: 15px;
+          margin-top: 10px;
+          width: 10%;
         }
         main {
             padding: 1rem;
@@ -62,9 +97,16 @@
 </head>
 <body>
 
-<header>
-    <h1>Kehutanan Berkelanjutan</h1>
-    <p>Membangun masa depan yang lebih baik melalui pengelolaan hutan yang ramah lingkungan.</p>
+  <header>
+    <a href=""><img src="./IMG/logo.png" alt="logo"></a>
+    <nav>
+        <ul>
+            <a href="">Home</a> |
+            <a href="">Content</a> |
+            <a href="">Tentang Kami</a> |
+            <a href="">Kontak</a>
+        </ul>
+    </nav>
 </header>
 
 <main>
